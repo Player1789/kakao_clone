@@ -1,7 +1,7 @@
 .nav {
   position: fixed;
   width: 100%;
-  padding: 10px 50px;
+  padding: 20px 50px;
   left: 0;
   bottom: 0;
   background-color: #fcfcfc;
@@ -13,6 +13,22 @@
   justify-content: space-between;
 }
 
-.nav .nav__list-item {
-  font-size: 24px;
+.nav .nav__list-link {
+  font-size: 30px;
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  color: white;
+  background-color: #dc5d46;
+  font-size: 16px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: -14px;
+  top: -6px;
 }
