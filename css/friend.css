@@ -10,6 +10,29 @@
 }
 
 .friend .friend__avatar {
-  width: 50px;
-  border-radius: 35%;
+  width: 60px;
+  border-radius: 38%;
+  margin-right: 10px;
+}
+
+.friend .m-avatar {
+  width: 70px;
+}
+
+.friend .g-avatar {
+  width: 75px;
+}
+
+.friend .friend__user {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.friend .friend__status,
+.friend .friend__timestamp {
+  font-size: 15px;
+  opacity: 0.7;
 }
