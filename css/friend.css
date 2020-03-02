@@ -16,11 +16,11 @@
 }
 
 .friend .m-avatar {
-  width: 65px;
+  width: 63px;
 }
 
 .friend .g-avatar {
-  width: 70px;
+  width: 66px;
 }
 
 .friend .friend__user {
@@ -36,9 +36,12 @@
 }
 
 .friend__column .friend__now-listening {
+  display: flex;
+  align-items: center;
   padding: 5px 10px;
   border: 2px solid #52e084;
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .friend__column .friend__now-listening span {
@@ -49,5 +52,12 @@
 .friend__column .friend__now-listening i {
   margin-left: 5px;
   color: #52e084;
+  cursor: pointer;
+}
+
+.friend .friend__add-btn {
+  background-color: #f4f3f4;
+  padding: 13px 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
