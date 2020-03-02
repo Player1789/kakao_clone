@@ -35,8 +35,13 @@
   opacity: 0.7;
 }
 
+.now-listening {
+  justify-content: flex-end;
+}
+
 .friend__column .friend__now-listening {
   display: flex;
+  width: 80%;
   align-items: center;
   padding: 5px 10px;
   border: 2px solid #52e084;
