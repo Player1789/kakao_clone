@@ -77,7 +77,6 @@
   display: flex;
   align-items: center;
   margin: 15px 0px;
-  width: 50%;
 }
 
 .message img {
@@ -113,8 +112,12 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+  color: white;
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to right, #3a7bd5, #3a6073);
+  color: white;
 }

@@ -41,12 +41,15 @@
 
 .friend__column .friend__now-listening {
   display: flex;
-  width: 90%;
   align-items: center;
   padding: 5px 10px;
   border: 2px solid #52e084;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.now-listening {
+  max-width: 40%;
 }
 
 .friend__column .friend__now-listening span {
