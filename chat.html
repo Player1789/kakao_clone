@@ -41,7 +41,7 @@
       </header>
       <main class="chat">
         <ul class="chat__messages">
-          <h5 class="chat__timestamp">Friday, January 11.2019</h5>
+          <h5 class="chat__timestamp">Friday, January 11. 2019</h5>
               <li class="incoming-message message">
                 <img src="images/avatar.jpg" class="message__avatar g-avatar">
                 <div class="message__content">
@@ -76,20 +76,19 @@
               </li>
           </ul>
       </main>
-      <section class="chat__write">
-          <div class="chat__write-column">
+      <section class="chat__write-container">
+          <input
+              class="chat__write"
+              type="text"
+              placeholder="Send message"
+              class="chat__write-input"
+          />
+          <div class="chat__icon-left chat__icon">
             <span class="chat__write-icon">
               <i class="far fa-plus-square"></i>
             </span>
           </div>
-          <div class="chat__write-column">
-            <input
-                type="text"
-                placeholder="Send message"
-                class="chat__write-input"
-            />
-          </div>
-          <div class="chat__write-column">
+          <div class="chat__icon-right chat__icon">
             <span class="chat__write-icon">
                 <i class="far fa-smile"></i>
             </span>

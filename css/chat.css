@@ -10,49 +10,74 @@
   width: 100%;
   display: flex;
   align-items: center;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.1),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 .chat {
   background-image: url(../images/chat_background.png);
-  min-height: 120vh;
+  min-height: 110vh;
   padding: 0 20px;
+}
+
+.chat__write-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .chat__write {
   margin: 0 auto;
-  left: 0;
-  right: 0;
-  position: fixed;
-  width: 80%;
-  bottom: 50px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding: 20px 60px;
   background-color: #fcfcfc;
-  border-radius: 20px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border: none;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
 }
 
-.chat__write .chat__write-icon {
+.chat__icon-right {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.chat__icon-right .chat__write-icon {
+  margin-left: 10px;
+}
+
+.chat__icon-left {
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.chat__write-container .chat__icon {
+  transition: all 0.5s ease-in-out;
   font-size: 22px;
   cursor: pointer;
 }
 
-.chat__write .chat__write-column:nth-child(2) {
-  width: 80%;
-}
-
-.chat__write .chat__write-column input {
-  padding: 10px 10px;
-  width: 100%;
-  font-size: 18px;
-  border: none;
-}
-
-.chat__write-column input:focus {
+.chat__write:focus {
   outline: none;
+  width: 80%;
+  border-radius: 40px;
+  padding: 10px 20px;
+  align-self: center;
+  transform: translateY(-50px);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
 }
 
 .chat .chat__messages {
@@ -67,7 +92,7 @@
   margin: 20px 0px;
   font-size: 14px;
   text-transform: uppercase;
-  background-color: #fcfcfc;
+
   border-radius: 40px;
   box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3),
     0 -6px 16px -6px rgba(0, 0, 0, 0.025);
@@ -112,12 +137,12 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
-  background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+  background-image: linear-gradient(to right, #f46b45, #eea849);
   color: white;
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
-  background-image: linear-gradient(to right, #3a7bd5, #3a6073);
+  background-image: linear-gradient(to right, #1e3c72, #2a5298);
   color: white;
 }
