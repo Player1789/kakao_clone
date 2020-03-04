@@ -2,6 +2,11 @@
   padding: 0px;
 }
 
+.chats-body .header,
+.chats-body .status-bar {
+  z-index: 2;
+}
+
 .chats-body .header {
   padding: 20px 20px;
   position: fixed;
@@ -16,7 +21,7 @@
 
 .chat {
   background-image: url(../images/chat_background.png);
-  min-height: 110vh;
+  min-height: 100vh;
   padding: 0 20px;
 }
 
@@ -104,11 +109,23 @@
   margin: 15px 0px;
 }
 
+@keyframes image {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .message img {
   width: 50px;
   border-radius: 25px;
   margin-right: 10px;
   align-self: start;
+  animation: image 1s ease-in-out infinite;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 .incoming-message {
